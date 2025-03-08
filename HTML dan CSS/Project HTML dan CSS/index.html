@@ -27,16 +27,16 @@
     <link rel="stylesheet" href="css/app.css" />
 </head>
 
-<body>
+<body style="background-color: #E9F8F9;">
     <!-- Header -->
-    <header>
+    <header class="navbar">
         <nav>
-            <ul class="side-bar">
-                <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26"
-                            viewBox="0 -960 960 960" width="26">
-                            <path
-                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                            </svg></li>
+            <ul class="side-bar" style="color: #181823;">
+                <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960"
+                        width="26">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Product</a></li>
@@ -45,14 +45,14 @@
             </ul>
             <ul>
                 <li class="logo-container"><img src="img/az-logo.png" alt=""></li>
-                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#About">About</a></li>
                 <li class="hideOnMobile"><a href="#">Blog</a></li>
                 <li class="hideOnMobile"><a href="#">Product</a></li>
                 <li class="hideOnMobile"><a href="#">Services</a></li>
                 <li class="hideOnMobile"><a href="#">Contact Us</a></li>
-                <li class="menu-buttom" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg"
-                            height="26" viewBox="0 -960 960 960" width="26">
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
+                <li class="menu-buttom" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 -960 960 960" width="26">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
                 </li>
             </ul>
         </nav>
@@ -62,21 +62,35 @@
     <!-- Start Main -->
     <main>
         <div id="content">
-            <article class="card">
-                <h2 id="Sejarah">Sejarah</h2>
-                <img src="img/history.jpg" alt="Sejarah" class="featured-image" />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi facere minus accusantium placeat
-                    ipsa, reprehenderit dolores ratione, reiciendis earum saepe accusamus explicabo laudantium magnam
-                    ducimus laborum. Cumque, quas tempora? Voluptatem natus dicta itaque exercitationem quia quas, ea
-                    corrupti repudiandae ipsa sit, accusamus debitis, illum aspernatur? Magnam praesentium nesciunt
-                    facere aliquid?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nam culpa quos numquam eius
-                    harum quod? Eaque ipsum ipsa perspiciatis labore aliquid cupiditate adipisci praesentium architecto
-                    incidunt asperiores voluptatum molestiae, reprehenderit ullam qui, tempora eveniet voluptatem earum
-                    commodi atque nihil iusto delectus pariatur expedita! Repellendus nam dicta doloremque et dolore!
-                </p>
+            <article class="card" style="background-color: #ffffff;">
+                <h2 id="About">About</h2>
+                <div class="container">
+                    <h2><span class="emoji">👋</span> Aziz Alhadiid</h2>
+                    <p>Mahasiswa di <span class="highlight">Universitas Jambi (UNJA)</span> yang memiliki passion dalam
+                        <b>coding</b>, terutama di bidang <b>Web Development</b> dan <b>UI/UX Design</b>. Selalu
+                        bersemangat untuk belajar teknologi baru dan mengasah keterampilan dalam membangun antarmuka
+                        yang menarik dan fungsional.</p>
+
+                    <h3><span class="emoji">🎯</span> Tujuan</h3>
+                    <p>Menjadi seorang <b>programmer profesional</b> yang dapat menciptakan solusi inovatif melalui
+                        teknologi.</p>
+
+                    <h3><span class="emoji">🚀</span> Keahlian & Minat</h3>
+                    <ul>
+                        <li><b>Frontend Development:</b> HTML, CSS, JavaScript, Bootstrap, Tailwind CSS</li>
+                        <li><b>Backend Development:</b> PHP, Laravel</li>
+                        <li><b>UI/UX Design:</b> Figma, Adobe XD</li>
+                        <li><b>Database:</b> MySQL</li>
+                    </ul>
+
+                    <p><span class="emoji">📚</span> Saat ini aktif belajar dan mengembangkan proyek di <b>Study Club
+                            HIMASI UNJA</b>, serta terus meningkatkan kemampuan melalui berbagai tantangan dan proyek
+                        praktis.</p>
+
+                    <p>Selalu siap untuk berkolaborasi dan berkembang di dunia teknologi! <span class="emoji">💻✨</span>
+                    </p>
+                </div>
+
             </article>
 
             <article class="card">
@@ -96,95 +110,76 @@
                 </p>
             </article>
 
-            <article class="card">
-                <h2 id="Wisata">Wisata</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus amet quae mollitia neque alias
-                    cupiditate nemo vel unde placeat commodi ad sunt magni ipsa molestiae exercitationem iusto ullam,
-                    tempore dolorum?</p>
-
-                <section>
-                    <h3 id="">Farm House</h3>
-                    <img src="img/farm-house.jpg" alt="Farm House" class="featured-image">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis reiciendis at vero natus
-                        assumenda necessitatibus, iusto vel quidem porro accusantium neque, ipsam eius minima fugit sit.
-                        Rerum, aspernatur iusto! Officia molestiae reiciendis repellat ipsum minima iste, magni deserunt
-                        impedit? Voluptate, corrupti molestias. Laborum sunt ipsum labore quia perspiciatis eos!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi vero dolore consequatur
-                        suscipit eligendi repudiandae rem porro voluptatem nesciunt. Doloremque saepe soluta fugiat a
-                        rem asperiores enim accusamus id dolorum eius, eos distinctio repellendus veritatis iusto
-                        quisquam esse! Temporibus ipsum voluptas odit id neque obcaecati enim pariatur, quibusdam nam
-                        dolorem!
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Bosscha</h2>
-                    <img src="img/bosscha.jpg" alt="Bosscha" class="featured-image">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis at, vitae culpa tempore
-                        earum corporis maxime ipsum provident pariatur sequi porro laborum consequatur doloremque,
-                        quisquam ipsa dolores distinctio sit unde impedit. Ad repellendus nulla aspernatur officiis
-                        culpa cumque quidem nam!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit eius excepturi
-                        quaerat tenetur neque perferendis voluptates fugiat cupiditate non. Maiores voluptate temporibus
-                        laudantium voluptas reprehenderit amet fugiat ducimus, rem distinctio qui, minima ab nostrum.
-                        Illo culpa a voluptatibus et?
-                    </p>
-                </section>
-            </article>
-
         </div> <!-- End Article -->
 
         <!-- Konten samping -->
-        <aside>
-            <article class="profile card">
+        <aside style="color: #e6e6eb; font-weight: 600;">
+            <article class="profile card" style="background-color: #537FE7;">
                 <div>
                     <header>
-                        <h2>Kota Bandung</h2>
-                        <p>Kota Kembang Paris van Java</p>
+                        <h2>Aziz Alhadiid</h2>
+                        <p style="margin-bottom: 10px;">Full Stack Developer || Web Developer</p>
                         <figure>
-                            <img src="img/bandung-badge.png" alt="Lambang Bandung" />
-                            <figcaption>Lambang</figcaption>
+                            <img src="img/aziz.jpg" alt="Aziz Alhadiid"
+                                style="border-radius: 100%; background-color: #C0EEF2; padding: 10px; box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);" />
                         </figure>
                     </header>
 
-                    <section>
+                    <section style="margin-top: 10px; width: 300px;">
                         <h3>Informasi Lainnya</h3>
                         <table>
                             <tr>
-                                <th>Negara</th>
-                                <td>Indonesia</td>
+                                <th>Email : </th>
+                                <td>aziz@example.com</td>
                             </tr>
                             <tr>
-                                <th>Hari jadi</th>
-                                <td>25 September 1810</td>
+                                <th>Telepon : </th>
+                                <td>+62 813-6670-5844</td>
                             </tr>
                             <tr>
-                                <th>Luas Total</th>
-                                <td>167.67 km<sup>2</sup></td>
-                            </tr>
-                            <tr>
-                                <th>Bahasa Daerah</th>
-                                <td>Sunda</td>
-                            </tr>
-                            <tr>
-                                <th>Kode Telepon</th>
-                                <td>+62 22</td>
+                                <th>Alamat : </th>
+                                <td>Jambi, Indonesia</td>
                             </tr>
                         </table>
+                        <div style="display: flex; justify-content: center; margin-top: 10px;">
+                            <ul class="social-media">
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            </ul>
+                        </div>
                     </section>
                 </div>
             </article>
-        </aside>    
+        </aside>
     </main>
     <!-- End Main -->
 
     <!-- Start Footer -->
-    <footer></footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/az-logo.png" alt="Aziz Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Product</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="footer-text">&copy; 2025 Aziz Alhadiid. All rights reserved.</p>
+        </div>
+    </footer>
     <!-- End Footer -->
+
 
     <!-- My Script -->
     <script src="js/script.js"></script>
