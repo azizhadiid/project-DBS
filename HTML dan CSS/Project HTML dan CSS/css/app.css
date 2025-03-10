@@ -15,6 +15,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 nav {
@@ -123,6 +124,65 @@ nav li:first-child {
     border-radius: 5px;
     padding: 15px;
 }
+
+/* Start Project */
+.project-container {
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.card-content {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Memastikan semua card memiliki tinggi sama */
+    justify-content: space-between; /* Menjaga tombol tetap di bagian bawah */
+    padding: 15px;
+}
+
+.card-content img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content h3 {
+    min-height: 50px; /* Pastikan tinggi tetap, sesuaikan sesuai kebutuhan */
+    display: flex;
+    align-items: center; /* Posisikan teks di tengah */
+    justify-content: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Isi ruang kosong agar tombol tetap di bawah */
+    display: flex;
+    align-items: center; /* Posisikan teks di tengah jika pendek */
+}
+
+.card-content a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card-content a:hover {
+    background: #0056b3;
+}
+/* End Project */
 
 main {
     padding: 20px;
@@ -283,6 +343,24 @@ footer {
     .footer-social {
         gap: 10px;
     }
+
+    .project-container {
+        flex-direction: column; /* Ubah jadi vertikal */
+        align-items: center;
+    }
+    
+    .card-content {
+        width: 90%; /* Supaya lebih responsif */
+        margin-top: 10px;
+    }
+
+    .card-content img {
+        display: block; /* Agar gambar tidak inline */
+        margin: auto; /* Memusatkan gambar */
+        max-width: 100%; /* Responsif agar tidak melebihi container */
+        height: auto; /* Menjaga proporsi gambar */
+        border-radius: 10px; /* Opsional, untuk tampilan lebih rapi */
+    }    
 }
 
 @media(max-width: 400px) {
@@ -310,4 +388,14 @@ footer {
     .footer-social a {
         font-size: 18px;
     }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center; /* Menyamakan posisi elemen ke tengah */
+    }
+
+    .card-content {
+        margin-top: 10px;
+    }
+
 }
